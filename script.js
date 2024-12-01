@@ -1,5 +1,24 @@
 <script>
-// Function to perform calculation based on selected type
+    // Function to toggle placeholder text based on selected calculator type
+    function toggleCalculator() {
+      const calculationType = document.querySelector('input[name="calculationType"]:checked').value;
+      switch (calculationType) {
+        case 'percentageOf':
+          document.getElementById('num1').placeholder = 'Enter total value';
+          document.getElementById('num2').placeholder = 'Enter percentage';
+          break;
+        case 'percentOf':
+          document.getElementById('num1').placeholder = 'Enter part value';
+          document.getElementById('num2').placeholder = 'Enter total value';
+          break;
+        case 'percentageChange':
+          document.getElementById('num1').placeholder = 'Enter starting value';
+          document.getElementById('num2').placeholder = 'Enter ending value';
+          break;
+      }
+    }
+
+    // Function to perform calculation based on selected type
     function calculate() {
       const num1 = parseFloat(document.getElementById('num1').value);
       const num2 = parseFloat(document.getElementById('num2').value);
