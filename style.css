@@ -1,0 +1,76 @@
+<style>
+    /* General styles */
+    .mypcalc {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px; 
+    }
+
+    .pcalc {
+      width: 100%;
+      max-width: 600px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .calc-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .pccalc-row {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .input-field, .result-field {
+      width: calc(50% - 10px); /* Adjusted width to fit two inputs per row */
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 9px;
+      font-size: 16px;
+      text-align: center;
+      box-sizing: border-box; 
+    }
+
+    .button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .result {
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Radio button styles */
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+  </style>
